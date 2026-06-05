@@ -1,17 +1,21 @@
-/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
     background-color: #f4f4f4;
+    color: #1f2937;
 }
 
-/* Navigation */
+/* HEADER & FOOTER */
 header,
 footer {
     background-color: #1f2937;
@@ -20,8 +24,8 @@ footer {
 
 nav {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
 }
@@ -30,17 +34,30 @@ nav h1 {
     margin-right: auto;
 }
 
+nav h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 
 nav a:hover {
     color: #60a5fa;
+    text-decoration: underline;
 }
 
-/* Main Layout */
+/* MAIN LAYOUT */
 .container {
     display: flex;
     max-width: 1200px;
@@ -49,22 +66,66 @@ nav a:hover {
     padding: 0 20px;
 }
 
+/* SIDEBAR */
 aside {
     flex: 1;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    height: fit-content;
 }
 
+.page-banner h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.page-banner p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+/* MAIN CONTENT */
 main {
     flex: 3;
     background: white;
+    padding: 25px;
+    border-radius: 12px;
+    animation: fadeIn 1s ease;
+}
+
+/* TYPOGRAPHY */
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* ARTICLES */
+article {
+    background: #eef1f3;
     padding: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 
-/* PROJECTS PAGE */
-
+/* PROJECTS GRID */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -77,7 +138,7 @@ main {
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .project-card:hover {
@@ -89,20 +150,26 @@ main {
 }
 
 .project-card h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
     margin-bottom: 15px;
-    color: #0f172a;
 }
 
 .project-card p {
-    line-height: 1.6;
     margin-bottom: 15px;
+}
+
+.project-card p:last-of-type {
+    color: #64748b;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
 .project-card a {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     color: #2563eb;
 }
 
@@ -110,76 +177,35 @@ main {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .featured {
-        grid-column: auto;
-    }
-}
-
-/* Articles */
-article {
-    background: #eef1f3;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
+/* IMAGES */
 img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-}
-nav a {
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: lightblue;
-     text-decoration: underline;
-}
-img {
     transition: 0.3s;
 }
 
 img:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
-main {
-    animation: fadeIn 1s;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
+/* CONTACT FORM */
 .contact-form {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 0 auto;
     padding: 30px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .contact-form fieldset {
     border: none;
-    padding: 0;
 }
 
 .contact-form legend {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -188,17 +214,16 @@ main {
     display: block;
     margin-top: 15px;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
 }
 
 .contact-form textarea {
@@ -209,22 +234,39 @@ main {
 .contact-form button {
     display: block;
     margin: 20px auto 0;
-    padding: 12px 25px;
-    background-color: #1b2940;
+    padding: 12px 30px;
+    background-color: #1e293b;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .contact-form button:hover {
-    background-color: #2d4368;
+    background-color: #334155;
 }
 
+/* FOOTER */
+footer a {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
-/* Tablet */
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* TABLET */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -239,12 +281,16 @@ main {
         margin-right: 0;
     }
 
-    body {
-        font-size: 15px;
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured {
+        grid-column: auto;
     }
 }
 
-/* Mobile */
+/* MOBILE */
 @media (max-width: 480px) {
     header,
     footer {
@@ -256,16 +302,16 @@ main {
         padding: 15px;
     }
 
-    article {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 1.6rem;
+    .page-banner h1 {
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
     }
 
     p {
