@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="styles.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Document</title>
+
+    <title>Skills</title>
 </head>
+
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -35,7 +40,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="Skills.html">Skills</a>
+                            <a class="nav-link active" href="Skills.html">Skills</a>
                         </li>
 
                         <li class="nav-item">
@@ -56,63 +61,87 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <aside class="page-banner">
-        <h1 style="color: white;">Skills</h1>
-        <p>
-            A collection of the technologies, tools, and frameworks I use
-            to build modern software solutions.
-        </p>
-        </aside>
 
-        <main>
+    <div class="container py-5">
 
-            <article>
-                <h3>Frontend Development</h3>
-                <p>
-                    Experience building responsive and accessible web applications
-                    using HTML5, CSS3, JavaScript, Bootstrap, and Razor Pages.
-                </p>
-            </article>
+        <div class="page-banner text-center mb-5">
+            <h1 class="text-white">Skills</h1>
+            <p>
+                A collection of the technologies, tools, and frameworks I use
+                to build modern software solutions.
+            </p>
+        </div>
 
-            <article>
-                <h3>Backend Development</h3>
-                <p>
-                    Developing server-side applications and RESTful APIs using
-                    C#, ASP.NET MVC, ASP.NET Core, and Entity Framework Core.
-                </p>
-            </article>
+        <div class="row g-4">
 
-            <article>
-                <h3>Databases</h3>
-                <p>
-                    Designing and managing relational databases using SQL Server
-                    and MySQL, including schema design, querying, and CRUD operations.
-                </p>
-            </article>
+            <div class="col-md-6">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Frontend Development</h3>
+                        <p class="card-text">
+                            Experience building responsive and accessible web
+                            applications using HTML5, CSS3, JavaScript,
+                            Bootstrap, and Razor Pages.
+                        </p>
+                    </div>
+                </article>
+            </div>
 
-            <article>
-                <h3>Testing & Tools</h3>
-                <p>
-                    Manual testing, API testing with Postman, Selenium automation,
-                    Git version control, GitHub, and Visual Studio.
-                </p>
-            </article>
+            <div class="col-md-6">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Backend Development</h3>
+                        <p class="card-text">
+                            Developing server-side applications and RESTful APIs
+                            using C#, ASP.NET MVC, ASP.NET Core, and Entity
+                            Framework Core.
+                        </p>
+                    </div>
+                </article>
+            </div>
 
-        </main>
+            <div class="col-md-6">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Databases</h3>
+                        <p class="card-text">
+                            Designing and managing relational databases using
+                            SQL Server and MySQL, including schema design,
+                            querying, and CRUD operations.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Testing & Tools</h3>
+                        <p class="card-text">
+                            Manual testing, API testing with Postman, Selenium
+                            automation, Git version control, GitHub, and
+                            Visual Studio.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
     </div>
 
-
-
     <footer>
-         <nav>
-            <a href="About.html">About</a>
-            <a href="Skills.html">Skills</a>
-            <a href="Projects.html">Projects</a>
-            <a href="Contact.html">Contacts</a>
+
+        <nav>
+            <a class="text-white mx-3 text-decoration-none" href="About.html">About</a>
+            <a class="text-white mx-3 text-decoration-none" href="Skills.html">Skills</a>
+            <a class="text-white mx-3 text-decoration-none" href="Projects.html">Projects</a>
+            <a class="text-white mx-3 text-decoration-none" href="Contact.html">Contact</a>
         </nav>
 
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
