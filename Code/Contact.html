@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,16 +15,14 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-blue" aria-label="Main navigation">
             <div class="container">
 
                 <a class="navbar-brand" href="HomePage.html">
                     EDWIN JOHN
                 </a>
 
-                <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -122,10 +121,7 @@
                                         First Name
                                     </label>
 
-                                    <input type="text"
-                                           class="form-control"
-                                           id="fname"
-                                           required>
+                                    <input type="text" class="form-control" id="fname" required>
                                 </div>
 
                                 <div class="col-md-6 mb-3">
@@ -133,10 +129,7 @@
                                         Last Name
                                     </label>
 
-                                    <input type="text"
-                                           class="form-control"
-                                           id="lname"
-                                           required>
+                                    <input type="text" class="form-control" id="lname" required>
                                 </div>
 
                             </div>
@@ -146,10 +139,7 @@
                                     Email Address
                                 </label>
 
-                                <input type="email"
-                                       class="form-control"
-                                       id="email"
-                                       required>
+                                <input type="email" class="form-control" id="email" required>
                             </div>
 
                             <div class="mb-3">
@@ -157,15 +147,11 @@
                                     Message
                                 </label>
 
-                                <textarea class="form-control"
-                                          id="message"
-                                          rows="6"
-                                          placeholder="Enter your message here..."
-                                          required></textarea>
+                                <textarea class="form-control" id="message" rows="6"
+                                    placeholder="Enter your message here..." required></textarea>
                             </div>
 
-                            <button type="submit"
-                                    class="btn btn-primary">
+                            <button type="submit" class="btn btn-primary">
                                 Send Message
                             </button>
 
@@ -182,7 +168,7 @@
 
     <footer class="bg-blue text-center py-4 mt-5">
 
-        <nav>
+        <nav aria-label="Footer navigation">
             <a class="text-white mx-3 text-decoration-none" href="About.html">About</a>
             <a class="text-white mx-3 text-decoration-none" href="Skills.html">Skills</a>
             <a class="text-white mx-3 text-decoration-none" href="Projects.html">Projects</a>
@@ -194,4 +180,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
