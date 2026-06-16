@@ -34,7 +34,8 @@ The project demonstrates responsive web design principles, semantic HTML structu
 A Bootstrap navigation bar is available on every page and automatically collapses into a hamburger menu on smaller devices.
 
 **Screenshot:**
-(Add screenshot here)
+
+
 
 ---
 
@@ -43,7 +44,7 @@ A Bootstrap navigation bar is available on every page and automatically collapse
 The homepage introduces visitors to the portfolio and provides a professional overview.
 
 **Screenshot:**
-(Add screenshot here)
+<img width="924" height="640" alt="image" src="https://github.com/user-attachments/assets/e5185328-1c2c-4f22-ab89-3c3d6015af65" />
 
 **Explanation:**
 The homepage contains a welcome section, profile information, and navigation links to other areas of the website.
@@ -55,7 +56,8 @@ The homepage contains a welcome section, profile information, and navigation lin
 The About page provides information about my educational background, software development experience, and career aspirations.
 
 **Screenshot:**
-(Add screenshot here)
+<img width="813" height="893" alt="image" src="https://github.com/user-attachments/assets/2e0d5e66-5edb-4420-9343-38f59b1e0baf" />
+
 
 **Explanation:**
 Semantic HTML elements such as `<main>`, `<article>`, and `<section>` were used to improve structure and accessibility.
@@ -74,7 +76,8 @@ The Skills page highlights the technologies and tools I have experience using.
 - Testing & Tools
 
 **Screenshot:**
-(Add screenshot here)
+<img width="829" height="874" alt="image" src="https://github.com/user-attachments/assets/dc38e256-bdc9-49e2-b612-431b16d54422" />
+
 
 **Explanation:**
 The page is divided into multiple sections, making the content easy to read and maintain.
@@ -92,7 +95,8 @@ The Projects page showcases software development projects and includes links to 
 - Notes Frontend
 
 **Screenshot:**
-(Add screenshot here)
+<img width="881" height="877" alt="image" src="https://github.com/user-attachments/assets/1f9bfc13-adf5-4192-a83d-6ec69d42f713" />
+
 
 **Explanation:**
 Each project contains a description, technologies used, and a repository link.
@@ -104,7 +108,8 @@ Each project contains a description, technologies used, and a repository link.
 The Gallery page displays a collection of images using a responsive layout.
 
 **Screenshot:**
-(Add screenshot here)
+<img width="902" height="847" alt="image" src="https://github.com/user-attachments/assets/bb0cf04d-49fa-49ca-8932-29e007b88311" />
+
 
 **Explanation:**
 The gallery adjusts automatically to different screen sizes, providing a consistent user experience.
@@ -122,7 +127,8 @@ The Contact page provides contact details and a contact form.
 - Contact Form
 
 **Screenshot:**
-(Add screenshot here)
+<img width="925" height="802" alt="image" src="https://github.com/user-attachments/assets/c9f27a1b-d9b3-4a50-a0af-58566cc569bd" />
+
 
 **Explanation:**
 The contact form uses HTML validation through required form fields.
@@ -156,7 +162,8 @@ The website was tested on multiple screen sizes.
 ### Desktop View
 
 **Screenshot:**
-(Add screenshot here)
+<img width="1893" height="883" alt="image" src="https://github.com/user-attachments/assets/34449be6-5131-4e74-9af5-40360525bd3f" />
+
 
 **Explanation:**
 The full navigation menu is displayed with all content visible across the page.
@@ -166,7 +173,8 @@ The full navigation menu is displayed with all content visible across the page.
 ### Tablet View
 
 **Screenshot:**
-(Add screenshot here)
+<img width="351" height="510" alt="image" src="https://github.com/user-attachments/assets/144ac08b-e32f-4fce-93f4-1fa32d426bae" />
+
 
 **Explanation:**
 Content automatically resizes and adjusts spacing for medium-sized screens.
@@ -176,21 +184,15 @@ Content automatically resizes and adjusts spacing for medium-sized screens.
 ### Mobile View
 
 **Screenshot:**
-(Add screenshot here)
+<img width="253" height="548" alt="image" src="https://github.com/user-attachments/assets/397e3e78-2913-40f7-805b-3a90361d14fd" />
+
 
 **Explanation:**
 The navigation collapses into a Bootstrap hamburger menu and content stacks vertically for improved usability.
 
 ---
 
-## How To Run The Project
 
-1. Download or clone the repository.
-2. Open the project folder in Visual Studio Code.
-3. Open `HomePage.html`.
-4. Run the project using Live Server.
-
----
 
 ## Learning Outcomes
 
